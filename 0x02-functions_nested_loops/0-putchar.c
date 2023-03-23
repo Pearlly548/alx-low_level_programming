@@ -7,13 +7,13 @@
 
 int main(void)
 {
-	char *pu = "_putchar";
+        char *pu = "_putchar";
 
-	while (*pu)
-	{
-		putchar(*pu);
-		pu++;
-	}
-	putchar('\n');
-	return (0);
+        while (*pu)
+        {
+                putchar(*pu);
+                pu++;
+        }
+        putchar('\n');
+        return (0);
 }
