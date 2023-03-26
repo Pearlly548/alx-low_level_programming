@@ -1,15 +1,14 @@
+/* This code prints with an error */
 #include <stdio.h>
 #include <unistd.h>
-
-
 /**
- * main - prints exactly and that piece of art is useful
+ * main - entry point
  *
- * Return: always 0 (success)
+ * Description: Code as alternative to print
+ *
+ * Return: if return 1 (Eror)
  */
-
 int main(void)
-
 {
 	/*
 	 * write - is a function that points to the screen using system call
