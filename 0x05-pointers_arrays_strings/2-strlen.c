@@ -5,15 +5,11 @@
  * Return: lenght of string
  */
 int _strlen(char *s)
+
 {
-	int longi = 0;
+	int len;
 
-	while (*s != '\0')
-	{
-		longi++;
-		s++
-	}
-
-	return (longi);
+	for (len = 0; s[len] != '\0'; len++)
+		;
+	return (len);
 }
-
