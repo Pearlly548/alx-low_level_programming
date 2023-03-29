@@ -5,10 +5,10 @@
  * @s: sring
  * return: 0
  */
-void print_rev(char *s);
+void print_rev(char *s)
 {
-	int i = 0;
-
+	int i;
+		
 	for (i = 0; s[i] != '\0'; i++)
 		;
 	for (i = i - 1; s[i] != '0'; i - -)
