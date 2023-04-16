@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - prints the name of the code
+ * main - functions prints the name of the code
  * @argc: number of arguments
  * @argv: array of arguments
  *
@@ -11,6 +11,6 @@
 int main(int argc, char *argv[])
 {
 	argc = 0;
-	printf("%d\n", *argv[argc]);
+	printf("%s\n", argv[argc]);
 	return (0);
 }
