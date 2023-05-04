@@ -1,1 +1,1 @@
-my C funtions readme.md
+my first 0x14-bit_manipulation readme
