@@ -1,11 +1,8 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
-
 
 /**
- * create_file - this function creates a file
- * @filename: the name of the file
+ * create_file - this program creates a file
+ * @filename: the file name
  * @text_content: string to write the file in
  *
  * Return: 1 on success and -1 on failure
@@ -13,7 +10,7 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int o,w, len = 0;
+	int o, w, len = 0;
 
 	if (filename == NULL)
 
@@ -24,11 +21,11 @@ int create_file(const char *filename, char *text_content)
 		for (len = 0; text_content[len];)
 			len++;
 	}
+
 	o = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	w = write(o, text_content,len);
+	w = write(o, text_content, len);
 
-	if (o == -1 || w == -1 )
-
+	if (o == -1 || w == -1)
 		return (-1);
 
 	close(o);
